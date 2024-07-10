@@ -8,12 +8,12 @@ Geodesic distances are notoriously difficult to compute analytically due to the 
 The geodesic distance between two points on a manifold is the length of the shortest path connecting them that lies entirely on the manifold. This is analogous to the concept of the "straight line" distance in Euclidean space but generalized to curved spaces.
 
 ### Varadhan's Formula
-Varadhan's formula provides a connection between the heat kernel and the geodesic distance. It states that for a small time \( t \), the heat kernel \( K_t(x, y) \) on a manifold approximates the geodesic distance \( d(x, y) \) as:
+Varadhan's formula provides a connection between the heat kernel and the geodesic distance. It states that for a small time \(t\), the heat kernel \(K_t(x, y)\) on a manifold approximates the geodesic distance $d(x, y)$ as:
 
-\[ d(x, y) \approx \sqrt{-4t \log K_t(x, y)} \]
+$$d(x, y) \approx \sqrt{-4t \log K_t(x, y)}$$
 
 ### Heat Kernel
-The heat kernel \( K_t(x, y) \) is the fundamental solution to the heat equation on the manifold. It describes how heat diffuses over time from one point to another.
+The heat kernel \(K_t(x, y)\) is the fundamental solution to the heat equation on the manifold. It describes how heat diffuses over time from one point to another.
 
 ### Monte Carlo Methods
 Monte Carlo methods are used to approximate the heat kernel through simulation. By leveraging the Invariance Principle, which relates random walks to Brownian motion, we can approximate the behavior of the heat equation.
@@ -25,14 +25,14 @@ We approximate the heat kernel using Monte Carlo methods. This involves simulati
 
 1. **Random Walks and Brownian Motion**: We approximate Brownian motion by simulating random walks. According to the Invariance Principle, the distribution of these random walks will converge to the distribution of Brownian motion.
 
-2. **Estimating Heat Kernel**: From the distribution of these random walks, we estimate the heat kernel \( K_t(x, y) \).
+2. **Estimating Heat Kernel**: From the distribution of these random walks, we estimate the heat kernel $K_t(x, y)$.
 
 ### Varadhan's Formula Application
 Using the approximated heat kernel, we apply Varadhan's formula to compute the geodesic distance:
 
-\[ d(x, y) \approx \sqrt{-4t \log \hat{K}_t(x, y)} \]
+$$d(x, y) \approx \sqrt{-4t \log \hat{K}_t(x, y)}$$
 
-where \( \hat{K}_t(x, y) \) is the approximated heat kernel obtained from our simulations.
+where $\hat{K}_t(x, y)$ is the approximated heat kernel obtained from our simulations.
 
 ### Implementation
 We implemented this approach using Python, leveraging libraries such as NumPy and SciPy for numerical computations and matplotlib for visualization.
@@ -44,21 +44,15 @@ Our approach successfully approximated geodesic distances on various manifolds, 
 ## Relevant Formulas
 
 1. **Heat Equation**:
-   \[
-   \frac{\partial u}{\partial t} = \Delta u
-   \]
-   where \( u(t, x) \) is the temperature at time \( t \) and point \( x \), and \( \Delta \) is the Laplace-Beltrami operator.
+   $$\frac{\partial u}{\partial t} = \Delta u$$
+   where $u(t, x)$ is the temperature at time $t$ and point $x$, and $\Delta$ is the Laplace-Beltrami operator.
 
 2. **Varadhan's Formula**:
-   \[
-   d(x, y) \approx \sqrt{-4t \log K_t(x, y)}
-   \]
+   $$d(x, y) \approx \sqrt{-4t \log K_t(x, y)}$$
 
 3. **Approximation of Heat Kernel using Monte Carlo**:
-   \[
-   \hat{K}_t(x, y) \approx \frac{1}{N} \sum_{i=1}^{N} \delta_{X_i}(y)
-   \]
-   where \( X_i \) are the end points of the random walks starting from \( x \), \( N \) is the number of random walks, and \( \delta_{X_i}(y) \) is the Dirac delta function centered at \( y \).
+   $$\hat{K}_t(x, y) \approx \frac{1}{N} \sum_{i=1}^{N} \delta_{X_i}(y)$$
+   where $X_i$ are the end points of the random walks starting from $x$, $N$ is the number of random walks, and $\delta_{X_i}(y)$ is the Dirac delta function centered at $y$.
 
 ## Conclusion
 
