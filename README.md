@@ -1,10 +1,10 @@
 ### Quick Tour of the files:
 
-1. MATH197.ipynb
+1. MATH197.ipynb -- 
    Notebook that was used to create the findings, beginning with exploration of effective values of $t$, in addition final distance measurements.
-2. StartingPointMath197-2.ipynb
+2. StartingPointMath197-2.ipynb -- 
    Notebook used to explain fundamentals of the project to my team.
-3. Math_197_Project.pdf
+3. Math_197_Project.pdf -- 
    Final project presentation, explaining all fundamental topics as well as final statement, meant to be understood by all undergraduate levels. 
 
 
