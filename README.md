@@ -1,3 +1,16 @@
+### Quick Tour of the files:
+
+1. MATH197.ipynb
+   Notebook that was used to create the findings, beginning with exploration of effective values of $t$, in addition final distance measurements.
+2. StartingPointMath197-2.ipynb
+   Notebook used to explain fundamentals of the project to my team.
+3. Math_197_Project.pdf
+   Final project presentation, explaining all fundamental topics as well as final statement, meant to be understood by all undergraduate levels. 
+
+
+
+
+
 # Application of Varadhan's Formula for Geodesic Distance Computation
 
 Geodesic distances are notoriously difficult to compute analytically due to the complexity of the underlying manifold structures. In this project, we aimed to apply Varadhan's formula, which relates distances on manifolds to the diffusion of heat on the manifold's surface, to compute these distances more effectively.
